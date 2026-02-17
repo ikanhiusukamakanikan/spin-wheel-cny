@@ -8,7 +8,6 @@ const ALL_NUMS: number[] = Array.from({ length: TOTAL }, (_, i) => i + 1);
 interface ConfettiParticleProps { x:number; color:string; delay:number; size:number; shape:"circle"|"square"|"rect"; }
 interface ConfettiParticleData extends ConfettiParticleProps { id:number; }
 type RevealPhase = "idle"|"flash"|"zoom"|"rise"|"show";
-type View = "wheel"|"admin";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 function shuffle(arr: number[]): number[] {
